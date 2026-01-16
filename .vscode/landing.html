@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coldplay | Landing Page</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* NAVBAR */
+    header {
+      background: rgba(0,0,0,0.8);
+      padding: 18px 60px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav img {
+      width: 70px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ccc;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    nav ul li a:hover {
+      color: #fff;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+        url("https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=1600");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      padding: 120px 60px 60px;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero-content h4 {
+      font-weight: 300;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+      color: #aaa;
+    }
+
+    .hero-content h1 {
+      font-size: 64px;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    .hero-content p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #ccc;
+      margin-bottom: 35px;
+    }
+
+    .hero-content a {
+      display: inline-block;
+      background: #e10600;
+      color: #fff;
+      padding: 14px 35px;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 1px;
+      border-radius: 3px;
+    }
+
+    .hero-content a:hover {
+      background: #b80500;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #000;
+      color: #777;
+      font-size: 13px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero-content h1 {
+        font-size: 42px;
+      }
+
+      nav ul {
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav>
+    <!-- TUF LOGO -->
+    <img src="download.png" alt="TUF Logo">
+
+    <ul>
+      <li><a href="#">Music</a></li>
+      <li><a href="#">Band</a></li>
+      <li><a href="#">Tour</a></li>
+      <li><a href="#">Journal</a></li>
+      <li><a href="#">Shop</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h4>CELEBRATING THE MUSIC OF</h4>
+    <h1>COLDPLAY</h1>
+
+    <p>
+      Welcome to the Coldplay landing page. Explore music, albums, live tours,
+      and the journey of one of the most influential bands in modern music history.
+      Relive iconic moments and discover the sound that connects millions worldwide.
+    </p>
+
+    <a href="#">LET'S GO</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Coldplay Landing Page
+</footer>
+
+</body>
+</html>
